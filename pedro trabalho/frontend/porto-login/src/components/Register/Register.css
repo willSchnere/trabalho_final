@@ -1,0 +1,100 @@
+
+.content-container {
+  flex: 1;
+  padding: 50px 20px; /* Ajustado para maior responsividade */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #003354;
+  min-height: 100vh;
+}
+
+/* Estilo do formulário */
+.register-form {  
+  background-color: #ececec;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 480px; /* Limita largura máxima */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Título do formulário */
+.register-form h2 {
+  color: #000000;
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center; /* Centralizado */
+}
+
+/* Grupo de inputs */
+.register-form .input-group {
+  margin: 15px 0;
+  width: 100%;
+}
+
+/* Labels */
+.register-form label {
+  display: block;
+  margin-bottom: 8px; /* Espaçamento mais consistente */
+  color: #000000;
+  font-weight: 500;
+}
+
+/* Campos de entrada */
+.register-form input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #91bed4;
+  border-radius: 34px;
+  font-size: 23px;
+  transition: border-color 0.3s ease;
+}
+
+.register-form input:focus {
+  border-color: #000000; /* Destaque ao focar */
+  outline: none; /* Remove borda azul padrão */
+}
+
+/* Botão de cadastro */
+.register-button {
+  background-color: #000000;
+  color: #91bed4;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.register-button:hover {
+  background-color: #ffffff31;
+  transform: scale(1.02); /* Efeito de zoom leve */
+}
+
+.register-button:active {
+  transform: scale(0.98); /* Efeito ao clicar */
+}
+
+/* Estilo responsivo */
+@media (max-width: 768px) {
+  .content-container {
+    padding: 20px;
+  }
+
+  .register-form {
+    padding: 20px;
+  }
+
+  .register-form h2 {
+    font-size: 20px;
+  }
+
+  .register-button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}

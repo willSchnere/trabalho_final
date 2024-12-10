@@ -1,0 +1,135 @@
+/* Container geral para login */
+.banana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 50px 20px; /* Ajuste no padding */
+  height: auto;
+  background-color: #486f92fb;
+}
+
+/* Formulário de login */
+.login-form {
+  background-color: #F2F2F2;
+  padding: 30px;  
+  border-radius: 8px;
+  width: 100%; /* Ajuste para ocupar 100% do container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.login-form h2 {
+  color: #00796B;
+  margin-bottom: 20px;
+}
+
+/* Centralizar e organizar os campos de entrada */
+.input-group {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Ajuste para alinhas à esquerda */
+  width: 100%;
+}
+
+.input-group label {
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #003354;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #D9E8F5; /* Ajuste para borda azul clara */
+  border-radius: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+/* Botão principal de login */
+.login-button {
+  background-color: #D9E8F5;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #003354;
+}
+
+/* Ajustes para "Lembrar-se" e "Cadastrar-se" */
+.remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.remember-container label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #003354;
+}
+
+.remember-container a {
+  text-decoration: none;
+  color: #D9E8F5;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.remember-container a:hover {
+  color: #003354;
+}
+
+.remember-container .register-link {
+  text-align: right;
+}
+
+/* Ajuste para o link de "Cadastrar-se" */
+.register-link a {
+  color: #D9E8F5; /* Laranja para destaque */
+  font-weight: bold;
+  font-size: 14px;
+}
+/* Ajustes para "Lembrar-se" e "Cadastrar-se" */
+.remember-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.remember-container label {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #003354;
+  white-space: nowrap; /* Garante que o texto não quebre em duas linhas */
+}
+
+.remember-container input[type="checkbox"] {
+  margin-right: 5px; /* Espaço entre o checkbox e o texto */
+}
+
+.remember-container a {
+  text-decoration: none;
+  color: #003354;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s ease;
+  white-space: nowrap; /* Garante que o link não quebre em duas linhas */
+}

@@ -1,0 +1,105 @@
+/* Estilo Global */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e elegante */
+    margin: 0;
+    padding: 0;
+    background-color: #003354; /* Azul claro, lembrando o mar */
+  }
+  
+  /* Contêiner Principal */
+  .viagi.abacaxi {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(128, 128, 128, 0.63); /* Fundo branco para contraste */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border: 1px solid #ddd;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Título */
+  h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #0056b3; /* Azul forte */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Lista de Viagens */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #cfe8ff;
+    border-radius: 8px;
+    background: #f9fbfc;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  li:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  li p {
+    margin: 8px 0;
+    font-size: 16px;
+    color: #444;
+  }
+  
+  li p strong {
+    color: #333;
+  }
+  
+  /* Botão */
+  button {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 25px;
+    background-color: #007bff; /* Azul profissional */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Azul escuro ao passar o mouse */
+    transform: scale(1.05);
+  }
+  
+  /* Mensagem de Erro */
+  p[style="color: red"] {
+    text-align: center;
+    color: #d9534f !important;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Mensagem de Nenhuma Viagem */
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* Animação */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

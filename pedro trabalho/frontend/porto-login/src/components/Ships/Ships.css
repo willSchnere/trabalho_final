@@ -1,0 +1,315 @@
+/* Geral */
+.ships-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: aliceblue;
+  min-height: calc(100vh - 242px); /* Altura dinâmica */
+}
+
+.ships-title {
+  font-size: 24px;
+  color: #00796B;
+  margin-bottom: 20px;
+}
+
+.ships-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.ship-card {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.ship-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.action-button, .add-ship-button, .logout-button {
+  background-color: #00796B;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.action-button:hover, .add-ship-button:hover {
+  background-color: #ffffff;
+}
+
+.delete-button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+/* Container geral para login e lista de navios */
+.ships-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  height: 74.6vh; /*Serve para Aumentar o tamanho do bloco para baixo assim colocando o site no tamanho ideal*/
+  background-color: #D9E8F5;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  padding: 20px;
+  height: 30h; /*Serve para Aumentar o tamanho do bloco para baixo assim colocando o site no tamanho ideal*/
+  background-color: aliceblue;
+}
+  /* Formulário de login e de adicionar navio */
+.login-form, .add-ship-form {
+  background-color: #F2F2F2;
+  padding: 30px;
+  border-radius: 8px;
+  width: 480px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding-top: 100px;
+}
+
+.login-form h2, .ships-container h2 {
+  color: #3d2d2d;
+}
+
+.input-group, .remember-container, .add-ship-form div {
+  margin: 15px 0;
+}
+
+/* Botões: login, adicionar navio, logout, editar e deletar */
+.login-button, .add-ship-button, .logout-button, .edit-button, .delete-button {
+  background-color: #91BED4;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover, .add-ship-button:hover, .logout-button:hover, .edit-button:hover, .delete-button:hover {
+  background-color: #0cebe7d5;
+}
+.ships-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding-bottom: 100px; /* Garantir que o footer não sobreponha o conteúdo */
+}
+.ships-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  width: 100%; /* Garante que os cards ocupem todo o espaço */
+}
+
+.ship-card {
+  width: 250px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  position: relative;
+}
+
+.ship-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.ship-status,
+.ship-date {
+  font-size: 14px;
+  color: gray;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.action-button {
+  background-color: #91BED4;
+  color: white;
+  padding: 8px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action-button:hover {
+  background-color: #0cebe7d5;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.add-ship-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f5f5f5; /* Cor de fundo para o formulário */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  margin-top: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.add-ship-button {
+  margin-top: 20px;
+  background-color: #91BED4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-ship-button:hover {
+  background-color: #0cebe7d5;
+}
+
+
+/* Estilos para o cabeçalho */
+/* Header estilos */
+.header-container {
+  position: relative;
+  width: 100%;
+  height: 90px;
+  background-color: #003354;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 64px;
+  color: white;
+  font-family: 'Italiana', serif;
+}
+
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-ship {
+  background: url('../Ships/images/ships.png') no-repeat center/contain;
+}
+
+.icon-phone {
+  background: url('../Ships/images/phone.png') no-repeat center/contain;
+}
+
+.icon-home {
+  background: url('../Ships/images/home.png') no-repeat center/contain;
+}
+
+/* Estilos para o footer */
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #003354;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+
+.footer-contact p {
+  margin: 0;
+  color: #ffffff;
+  font-size: 14px;
+}
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #91BED4;
+  min-height: calc(100vh - 242px); /* Ajusta dinamicamente a altura */
+}
+
+.edit-form {
+  width: 500px;
+  background-color: #D9E8F5;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.edit-form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.edit-buttons {
+  display: flex;
+  justify-content: space-between;
+}
